@@ -1,6 +1,6 @@
 {
-  "version": "3.5.0",
-  "notes": "v3.5.0: resilience and portability. If AI is unreachable or a key fails, the app now detects whether it is a connection or a credential problem and automatically falls back to the offline engine with a clear, friendly message, so you are never blocked on another machine. New Run on another machine (portable) export/import moves all your data (with or without saved AI keys) to any Windows PC; core features need no account and no internet. Applies to both apps.",
+  "version": "3.5.1",
+  "notes": "v3.5.1: quality fixes from an independent product/design review. Fixed the resume headline so it no longer duplicates a seniority word or appends the weak word candidate; fixed the cover-letter tone picker so the options shown (professional, warm, confident, concise, executive) actually match what the engine produces (previously formal and bold silently did nothing); added a second skill-noise filter so junk tokens never reach the Skills line even from AI output; and relabeled the ATS score as a keyword-coverage estimate, not a real-ATS prediction, so it does not create false confidence.",
   "apps": {
     "resume": "https://github.com/yuragold/career-suite-updates/raw/main/Resume-and-Cover-Letter-Master-Generator.exe",
     "job": "https://github.com/yuragold/career-suite-updates/raw/main/Job-Preparation-Drill.exe"
