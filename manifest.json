@@ -1,6 +1,6 @@
 {
-  "version": "3.1.0",
-  "notes": "v3.1.0: added six research-backed job-search tools - Elevator Pitch builder, Networking/referral outreach + contacts, Job Application Tracker with follow-up .ics reminders, Salary Negotiation script + calculator, Reference Sheet builder, and one-click Application Kit.",
+  "version": "3.2.0",
+  "notes": "v3.2.0: real-application QA pass. Fixed offline resume-engine defects (markdown leftovers, junk skills, machine-tell summary, keyword-stuffed headline, repeated verbs, [Company]/[Education] placeholders); added qa-reviewer agent that judges a resume+cover against a job and gives a screen-out/interview verdict with fixes.",
   "apps": {
     "resume": "https://github.com/yuragold/career-suite-updates/raw/main/Resume-and-Cover-Letter-Master-Generator.exe",
     "job": "https://github.com/yuragold/career-suite-updates/raw/main/Job-Preparation-Drill.exe"
