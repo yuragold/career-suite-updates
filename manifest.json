@@ -1,6 +1,6 @@
 {
-  "version": "3.2.0",
-  "notes": "v3.2.0: real-application QA pass. Fixed offline resume-engine defects (markdown leftovers, junk skills, machine-tell summary, keyword-stuffed headline, repeated verbs, [Company]/[Education] placeholders); added qa-reviewer agent that judges a resume+cover against a job and gives a screen-out/interview verdict with fixes.",
+  "version": "3.3.0",
+  "notes": "v3.3.0: added an auto-updating skill-phrase data pack. The offline resume engine now converts raw job-description nouns into polished, ATS-safe skill phrases (account to Account management, escalations to Enterprise escalation management, renewals to Renewal management), each still containing the raw keyword so ATS coverage is preserved. A bundled 130+ phrase library ships offline; the app pulls the latest skills-data.json from this channel on launch (offline fallback) and via a new Update skill library now button. Applies to both apps.",
   "apps": {
     "resume": "https://github.com/yuragold/career-suite-updates/raw/main/Resume-and-Cover-Letter-Master-Generator.exe",
     "job": "https://github.com/yuragold/career-suite-updates/raw/main/Job-Preparation-Drill.exe"
