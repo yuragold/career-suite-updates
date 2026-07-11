@@ -1,6 +1,6 @@
 {
-  "version": "3.3.0",
-  "notes": "v3.3.0: added an auto-updating skill-phrase data pack. The offline resume engine now converts raw job-description nouns into polished, ATS-safe skill phrases (account to Account management, escalations to Enterprise escalation management, renewals to Renewal management), each still containing the raw keyword so ATS coverage is preserved. A bundled 130+ phrase library ships offline; the app pulls the latest skills-data.json from this channel on launch (offline fallback) and via a new Update skill library now button. Applies to both apps.",
+  "version": "3.4.0",
+  "notes": "v3.4.0: new authenticity-guard agent plus accuracy fixes. Authenticity-guard cross-checks the generated resume and cover letter against your real background, flags any number or claim it cannot find in your source (anti-fabrication), flags AI-ish cliches with plain-English rewrites, and (with an AI key) rewrites the summary and bullets in a human voice. Also: ATS matching now understands word variants (manage/managed/management, customer/customers) for more accurate coverage; the resume summary now uses polished skill phrases; and the ATS Match tab runs a formatting check on your source resume (tables, columns, decorative bullets, missing standard headings) that real ATS can mis-read.",
   "apps": {
     "resume": "https://github.com/yuragold/career-suite-updates/raw/main/Resume-and-Cover-Letter-Master-Generator.exe",
     "job": "https://github.com/yuragold/career-suite-updates/raw/main/Job-Preparation-Drill.exe"
