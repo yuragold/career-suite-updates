@@ -1,6 +1,6 @@
 {
-  "version": 1,
-  "updatedAt": "2026-06-27",
+  "version": 2,
+  "updatedAt": "2026-07-11",
   "note": "Auto-updating skill-phrase + action-verb data pack for the Career Suite apps. Keys are lowercase raw JD nouns; values are polished, ATS-safe phrases that contain the raw token. Verbs feed resume bullet rotation. This file can be extended without rebuilding the apps.",
   "skills": {
     "account": "Account management",
@@ -141,5 +141,12 @@
     "Directed", "Spearheaded", "Championed", "Accelerated", "Scaled", "Streamlined",
     "Negotiated", "Partnered", "Advised", "Mentored", "Launched", "Established",
     "Transformed", "Optimized", "Secured", "Expanded", "Reduced", "Improved"
-  ]
+  ],
+  "msft": {
+    "competencies": ["Customer obsession and outcome ownership", "Drives for results and business impact", "Cross-team collaboration and orchestration", "Executive and stakeholder communication", "Growth mindset and learning agility", "Influence without authority", "Judgment and dealing with ambiguity", "Modeling, coaching, and caring (people leadership)"],
+    "culture": ["Customer-obsessed, not competitor-obsessed", "Growth mindset: learn-it-all over know-it-all", "One Microsoft: land shared wins across teams", "Model, Coach, Care (the leadership expectation)", "Diverse and inclusive by default", "Make others better; multiply impact through others"],
+    "amRubric": ["Owns a book of business and a number (renewal, growth, consumption)", "Builds executive relationships and account plans", "Drives adoption and consumption, not just closes", "Orchestrates specialists and partners around the customer", "Forecasts accurately and manages a pipeline", "Turns at-risk accounts into retained, growing accounts"],
+    "loop": "A typical Microsoft loop is 4-5 rounds: a recruiter screen, a hiring-manager screen, then a panel of 3-4 (often a peer, a cross-functional partner, and a skip-level or as-appropriate leader). Expect behavioral and competency questions mapped to the Microsoft core competencies, a role-specific scenario or case (for AM/CSM: an account-recovery or growth scenario), and strong emphasis on customer obsession, collaboration, and growth mindset. Prepare 6-8 STAR stories, each tagged to a competency, and one account-recovery / customer-outcome story you can go deep on.",
+    "questions": ["Tell me about a time you turned around an unhappy or at-risk customer.", "Describe a time you influenced a decision without formal authority.", "Give an example of driving a measurable business outcome for a customer.", "Tell me about a time you failed and what you learned (growth mindset).", "How do you orchestrate multiple internal teams around one customer goal?", "Describe a time you disagreed with a stakeholder and how you handled it.", "Tell me about a complex problem you owned end to end."]
+  }
 }

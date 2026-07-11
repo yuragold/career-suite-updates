@@ -1,6 +1,6 @@
 {
-  "version": "3.5.1",
-  "notes": "v3.5.1: quality fixes from an independent product/design review. Fixed the resume headline so it no longer duplicates a seniority word or appends the weak word candidate; fixed the cover-letter tone picker so the options shown (professional, warm, confident, concise, executive) actually match what the engine produces (previously formal and bold silently did nothing); added a second skill-noise filter so junk tokens never reach the Skills line even from AI output; and relabeled the ATS score as a keyword-coverage estimate, not a real-ATS prediction, so it does not create false confidence.",
+  "version": "3.6.0",
+  "notes": "v3.6.0: four job-search upgrades from the product review. New Pivot Narrative tab translates your technical background into truthful account-management language (offline guide plus AI line-by-line rewrite), tuned to Microsoft competencies. The Job Tracker now shows real outcomes: response rate, interview rate, offers, and a breakdown by resume variant and by source, so you learn what actually works. A bundled, auto-updating Microsoft data pack (core competencies, culture signals, AM/CSM rubric, interview-loop structure, likely questions) feeds the Pivot tab and a new Microsoft interview-loop card in the Job app. And the Inputs tab now leads with a referral-first prompt, because a referral beats a perfect resume.",
   "apps": {
     "resume": "https://github.com/yuragold/career-suite-updates/raw/main/Resume-and-Cover-Letter-Master-Generator.exe",
     "job": "https://github.com/yuragold/career-suite-updates/raw/main/Job-Preparation-Drill.exe"
