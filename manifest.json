@@ -1,0 +1,8 @@
+{
+  "version": "2.8.0",
+  "notes": "v2.8.0: added Anthropic Claude and OpenRouter to the AI engines resource list; Career Suite Installer online-update channel.",
+  "apps": {
+    "resume": "https://github.com/yuragold/career-suite-updates/raw/main/Resume-and-Cover-Letter-Master-Generator.exe",
+    "job": "https://github.com/yuragold/career-suite-updates/raw/main/Job-Preparation-Drill.exe"
+  }
+}
