@@ -1,7 +1,7 @@
 {
-  "version": 2,
-  "updatedAt": "2026-07-11",
-  "note": "Auto-updating skill-phrase + action-verb data pack for the Career Suite apps. Keys are lowercase raw JD nouns; values are polished, ATS-safe phrases that contain the raw token. Verbs feed resume bullet rotation. This file can be extended without rebuilding the apps.",
+  "version": 3,
+  "updatedAt": "2026-07-13T14:20:22.645Z",
+  "note": "Auto-updating skill-phrase + action-verb data pack for the Career Suite apps. Keys are lowercase raw JD nouns; values are polished, ATS-safe phrases that contain the raw token. Verbs feed resume bullet rotation. This file can be extended without rebuilding the apps. (includes Resume Analyzer skill v2)",
   "skills": {
     "account": "Account management",
     "accounts": "Account management",
@@ -137,16 +137,120 @@
     "governance": "Governance"
   },
   "verbs": [
-    "Led", "Drove", "Owned", "Delivered", "Resolved", "Coordinated", "Built",
-    "Directed", "Spearheaded", "Championed", "Accelerated", "Scaled", "Streamlined",
-    "Negotiated", "Partnered", "Advised", "Mentored", "Launched", "Established",
-    "Transformed", "Optimized", "Secured", "Expanded", "Reduced", "Improved"
+    "Led",
+    "Drove",
+    "Owned",
+    "Delivered",
+    "Resolved",
+    "Coordinated",
+    "Built",
+    "Directed",
+    "Spearheaded",
+    "Championed",
+    "Accelerated",
+    "Scaled",
+    "Streamlined",
+    "Negotiated",
+    "Partnered",
+    "Advised",
+    "Mentored",
+    "Launched",
+    "Established",
+    "Transformed",
+    "Optimized",
+    "Secured",
+    "Expanded",
+    "Reduced",
+    "Improved"
   ],
   "msft": {
-    "competencies": ["Customer obsession and outcome ownership", "Drives for results and business impact", "Cross-team collaboration and orchestration", "Executive and stakeholder communication", "Growth mindset and learning agility", "Influence without authority", "Judgment and dealing with ambiguity", "Modeling, coaching, and caring (people leadership)"],
-    "culture": ["Customer-obsessed, not competitor-obsessed", "Growth mindset: learn-it-all over know-it-all", "One Microsoft: land shared wins across teams", "Model, Coach, Care (the leadership expectation)", "Diverse and inclusive by default", "Make others better; multiply impact through others"],
-    "amRubric": ["Owns a book of business and a number (renewal, growth, consumption)", "Builds executive relationships and account plans", "Drives adoption and consumption, not just closes", "Orchestrates specialists and partners around the customer", "Forecasts accurately and manages a pipeline", "Turns at-risk accounts into retained, growing accounts"],
+    "competencies": [
+      "Customer obsession and outcome ownership",
+      "Drives for results and business impact",
+      "Cross-team collaboration and orchestration",
+      "Executive and stakeholder communication",
+      "Growth mindset and learning agility",
+      "Influence without authority",
+      "Judgment and dealing with ambiguity",
+      "Modeling, coaching, and caring (people leadership)"
+    ],
+    "culture": [
+      "Customer-obsessed, not competitor-obsessed",
+      "Growth mindset: learn-it-all over know-it-all",
+      "One Microsoft: land shared wins across teams",
+      "Model, Coach, Care (the leadership expectation)",
+      "Diverse and inclusive by default",
+      "Make others better; multiply impact through others"
+    ],
+    "amRubric": [
+      "Owns a book of business and a number (renewal, growth, consumption)",
+      "Builds executive relationships and account plans",
+      "Drives adoption and consumption, not just closes",
+      "Orchestrates specialists and partners around the customer",
+      "Forecasts accurately and manages a pipeline",
+      "Turns at-risk accounts into retained, growing accounts"
+    ],
     "loop": "A typical Microsoft loop is 4-5 rounds: a recruiter screen, a hiring-manager screen, then a panel of 3-4 (often a peer, a cross-functional partner, and a skip-level or as-appropriate leader). Expect behavioral and competency questions mapped to the Microsoft core competencies, a role-specific scenario or case (for AM/CSM: an account-recovery or growth scenario), and strong emphasis on customer obsession, collaboration, and growth mindset. Prepare 6-8 STAR stories, each tagged to a competency, and one account-recovery / customer-outcome story you can go deep on.",
-    "questions": ["Tell me about a time you turned around an unhappy or at-risk customer.", "Describe a time you influenced a decision without formal authority.", "Give an example of driving a measurable business outcome for a customer.", "Tell me about a time you failed and what you learned (growth mindset).", "How do you orchestrate multiple internal teams around one customer goal?", "Describe a time you disagreed with a stakeholder and how you handled it.", "Tell me about a complex problem you owned end to end."]
+    "questions": [
+      "Tell me about a time you turned around an unhappy or at-risk customer.",
+      "Describe a time you influenced a decision without formal authority.",
+      "Give an example of driving a measurable business outcome for a customer.",
+      "Tell me about a time you failed and what you learned (growth mindset).",
+      "How do you orchestrate multiple internal teams around one customer goal?",
+      "Describe a time you disagreed with a stakeholder and how you handled it.",
+      "Tell me about a complex problem you owned end to end."
+    ]
+  },
+  "analyzer": {
+    "version": 2,
+    "updatedAt": "2026-07-13",
+    "systemPrompt": "You are a Principal Technical Recruiter and Career Strategist. Your role is to elevate the user's resume into the top 1% of applicants by focusing on strategic impact, trajectory, and behavioral alignment.\n\nApply these elite evaluative skills to the resume provided:\n\n1. Career Trajectory and Narrative Check: Analyze the job titles and dates. Ensure the resume tells a clear story of upward mobility, increasing scope of responsibility, and leadership growth, rather than just a list of chores.\n2. Business Impact Elevation: Audit every technical or project bullet point. Shift the focus from what you did to how it impacted the company's bottom line (revenue generated, churn reduced, risk mitigated, efficiency gained).\n3. Behavioral Archetype Alignment: Analyze the target job description to determine the hidden corporate persona needed (for example The Turnaround Expert, The Scaler, The Innovator, The Operator). Critique the resume's tone to match this specific archetype.\n4. Red Flag and Gap Detection: Proactively flag potential issues that worry recruiters, such as short tenures, ambiguous employment gaps, or sudden industry shifts, and provide brief, ethical strategy notes to frame them positively.\n5. Interactive Inquiry: Do not just give a static critique. Actively ask the user 2 to 3 targeted questions about their undocumented achievements to extract metrics they might have forgotten.\n\nAlso apply: Seniority and executive signaling; quantification and storytelling (CAR and STAR, numbers first); technical contextualization and thought leadership (modern stack, open source, talks, patents); and readability, consistency, and mechanics. Never invent facts the resume does not support; where a claim is plausible but unverified, mark it [confirm if true]. Greet the user, briefly outline the strategic pillars, then give a prioritized, honest critique with concrete rewrites.",
+    "pillars": [
+      {
+        "key": "trajectory",
+        "title": "Career Trajectory and Narrative"
+      },
+      {
+        "key": "impact",
+        "title": "Business Impact Elevation"
+      },
+      {
+        "key": "archetype",
+        "title": "Behavioral Archetype Alignment"
+      },
+      {
+        "key": "redflags",
+        "title": "Red Flags and Gaps"
+      },
+      {
+        "key": "seniority",
+        "title": "Seniority and Executive Signaling"
+      },
+      {
+        "key": "quant",
+        "title": "Quantification and Storytelling"
+      },
+      {
+        "key": "tech",
+        "title": "Tech Depth and Thought Leadership"
+      },
+      {
+        "key": "mechanics",
+        "title": "Readability, Consistency and Mechanics"
+      }
+    ],
+    "tips": [
+      "Match the exact posting title in your headline; exact-title matches raise callback rates sharply.",
+      "Open the top third with a one-line value proposition plus your single biggest number.",
+      "Prefer scope words (owned, led, drove) over activity words (helped, worked on, responsible for).",
+      "In 2025-2026, name the modern stack explicitly (cloud-native, IaC, AI/ML ops) if genuinely yours.",
+      "Every promotion or scope jump should be visible on the page, not implied."
+    ],
+    "checks": [
+      "Promotion velocity: is upward movement visible within each tenure, not just across jobs?",
+      "Outcome-to-activity ratio: at least 70 percent of bullets should state a result, not a task.",
+      "Recruiter 6-second scan: title, seniority cue, and one metric must appear in the top third.",
+      "AI-tell audit: remove uniform sentence rhythm, rule-of-three stacks, and generic buzzwords."
+    ]
   }
 }
